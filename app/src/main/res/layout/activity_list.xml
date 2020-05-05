@@ -31,11 +31,11 @@
             android:layout_width="match_parent"
             android:id="@+id/reminder_tittle"
             android:layout_marginLeft="72dp"
-            android:hint="Reminder"
+            android:hint="@string/add_reminder"
             android:textSize="25dp"
             android:lines="4"
             android:minLines="4"
-            android:gravity="top|left"
+            android:gravity="top|start"
             android:textColor="@android:color/white"
             android:scrollHorizontally="false"
             android:textColorHint="@color/primary_text_disabled_material_dark"
@@ -71,7 +71,7 @@
                     android:id="@+id/date_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Date"
+                    android:text="@string/date"
                     android:textSize="15dp" />
 
             </LinearLayout>
@@ -94,7 +94,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="72dp"
                 android:layout_marginTop="8dp"
-                android:text="Details"
+                android:text="@string/details"
                 android:id="@+id/details"
                 android:textSize="15dp"
                 android:gravity="center_vertical"
@@ -131,7 +131,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="15dp"
-                        android:text="Date"/>
+                        android:text="@string/date"/>
 
                 </LinearLayout>
             </RelativeLayout>
@@ -166,7 +166,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="15dp"
-                        android:text="Time"/>
+                        android:text="@string/time"/>
 
                 </LinearLayout>
             </RelativeLayout>
@@ -200,7 +200,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="15dp"
-                        android:text="Repeat"/>
+                        android:text="@string/repeat"/>
 
                 </LinearLayout>
 

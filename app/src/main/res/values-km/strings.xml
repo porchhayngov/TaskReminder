@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <resources>
 
-    <string name="app_name">TaskReminder</string>
+    <string name="app_name">ការងារត្រូវធ្វើ</string>
 
-    <string name="no_cardetails">Click on the button below to begin creating your reminder!</string>
+    <string name="no_cardetails">ចុចលើប៊ូតុងខាងក្រោមដើម្បីចាប់ផ្តើមបង្កើតកម្មវិធីរំលឹករបស់អ្នក!</string>
 
     <string name="title_activity_add_reminder">Add Reminder</string>
 
@@ -11,15 +11,15 @@
 
     <string name="title_activity_licenses">Licenses</string>
 
-    <string name="add_reminder">Reminder</string>
+    <string name="add_reminder">រំលឹក</string>
 
-    <string name="details">Details</string>
+    <string name="details">លម្អិត</string>
 
-    <string name="date">Date</string>
+    <string name="date">កាលបរិច្ឆេទ</string>
 
-    <string name="time">Time</string>
+    <string name="time">ពេលវេលា</string>
 
-    <string name="repeat">Repeat</string>
+    <string name="repeat">ធ្វើម្តងទៀត</string>
 
     <string name="repeat_off">Off</string>
 
