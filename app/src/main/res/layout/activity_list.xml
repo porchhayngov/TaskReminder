@@ -99,7 +99,7 @@
                 android:textSize="15dp"
                 android:gravity="center_vertical"
                 android:layout_marginLeft="72dp"
-                android:textColor="@color/mdtp_white"/>
+                />
 
             <RelativeLayout
                 android:layout_width="match_parent"

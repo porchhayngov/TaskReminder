@@ -32,7 +32,6 @@
             android:layout_height="wrap_content"
             android:ellipsize="end"
             android:maxLines="2"
-            android:textColor="@color/mdtp_white"
             tools:text="Title"
             android:textSize="20sp"/>
 
@@ -43,7 +42,6 @@
             android:ellipsize="marquee"
             android:singleLine="true"
             android:textSize="15sp"
-            android:textColor="@color/mdtp_white"
             tools:text="Date and Time"/>
 
         <TextView
@@ -53,7 +51,6 @@
             android:ellipsize="marquee"
             android:singleLine="true"
             android:textSize="15sp"
-            android:textColor="@color/mdtp_white"
             tools:text="Repeat No and Type"/>
 
     </LinearLayout>
