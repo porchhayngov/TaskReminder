@@ -5,4 +5,10 @@
     <item name="empty_view" type="id" />
     <item name="add_reminder_layout_top" type="id" />
     <item name="active_iamge" type="id" />
+    <item name="reminder_title" type="id" />
+    <item name="set_date" type="id" />
+    <item name="set_time" type="id" />
+    <item name="set_repeat" type="id" />
+    <item name="set_repeat_no" type="id" />
+    <item name="set_repeat_type" type="id" />
 </resources>
