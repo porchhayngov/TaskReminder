@@ -1,4 +1,4 @@
-package com.chhay.taskreminder;
+package com.chhay.taskreminder.email;
 
 import android.app.Application;
 

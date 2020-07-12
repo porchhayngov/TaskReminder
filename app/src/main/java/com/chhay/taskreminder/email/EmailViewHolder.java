@@ -1,10 +1,11 @@
-package com.chhay.taskreminder;
+package com.chhay.taskreminder.email;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
+import com.chhay.taskreminder.R;
 import com.facebook.drawee.view.SimpleDraweeView;
 
 

@@ -33,7 +33,7 @@
 
     <string name="editor_activity_title_new_reminder">Add Reminder Details</string>
 
-<!--    <string name="editor_activity_title_edit_reminder">Edit Reminder</string>-->
+    <string name="editor_activity_title_edit_reminder">Edit Reminder</string>
 
     <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
 
@@ -59,6 +59,6 @@
 
     <string name="editor_update_reminder_failed">Error with updating reminder</string>
 
-    <string name="reminder_title">AlarmReminder</string>
+    <string name="reminder_title">TaskReminder</string>
 
 </resources>

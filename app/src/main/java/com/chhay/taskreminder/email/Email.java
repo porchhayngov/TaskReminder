@@ -1,4 +1,4 @@
-package com.chhay.taskreminder;
+package com.chhay.taskreminder.email;
 
 public class Email {
     private String sender;
