@@ -1,5 +1,6 @@
-package com.chhay.taskreminder.email;
+package com.chhay.taskreminder.tasks;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -16,15 +17,16 @@ import com.chhay.taskreminder.R;
 import com.google.gson.Gson;
 
 
-public class EmailsActivity extends AppCompatActivity {
+public class TasksActivity extends AppCompatActivity implements TasksAdapter.onTasksListener {
 
     private RecyclerView recyclerView;
+    Tasks[] tasks;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_emails);
+        setContentView(R.layout.activity_tasks);
 
         //Make a reference to the RecyclerView
         recyclerView = findViewById(R.id.recycler_view);
@@ -33,33 +35,41 @@ public class EmailsActivity extends AppCompatActivity {
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-       loadEmails();
+       loadTasks(this);
 
     }
 
-    private void loadEmails(){
+    private void loadTasks(final TasksAdapter.onTasksListener onTaskListener){
         //Load com.chhay.taskreminder.email from the server using Volley library
-        String url = "http://10.0.2.2/mails.php";
+        String url = "http://10.0.2.2/tasks.json";
         StringRequest request = new StringRequest(url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 //convert json string to array of Email using Gson
                 Gson gson = new Gson();
-//                Email[] emails = gson.fromJson(response, Email[].class);
-                Email[] emails = gson.fromJson(response, Email[].class);
+                tasks = gson.fromJson(response, Tasks[].class);
                 //create and set an adapter
-                EmailsAdapter adapter = new EmailsAdapter(emails);
+                TasksAdapter adapter = new TasksAdapter(tasks, onTaskListener);
                 recyclerView.setAdapter(adapter);
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(EmailsActivity.this, "something error while loading data from the server", Toast.LENGTH_LONG).show();
+                Toast.makeText(TasksActivity.this, "something error while loading data from the server", Toast.LENGTH_LONG).show();
                 Log.d("chhayManager", "load data error" + error.getMessage());
             }
         });
 
         //add the request to the Queue
         Volley.newRequestQueue(this).add(request);
+    }
+
+    @Override
+    public void onTasksClick(int position) {
+        Log.d("click","position: " + position);
+        Intent intent = new Intent(this, DetailTasksActivity.class);
+        intent.putExtra("title",tasks[position].getTitle());
+        intent.putExtra("date",tasks[position].getDate());
+        startActivity(intent);
     }
 }

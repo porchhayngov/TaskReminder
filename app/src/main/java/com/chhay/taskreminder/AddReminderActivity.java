@@ -26,7 +26,7 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
+import com.chhay.taskreminder.data.AlarmReminderDbHelper;
 import com.chhay.taskreminder.data.AlarmReminderContract;
 import com.chhay.taskreminder.reminder.AlarmScheduler;
 import com.getbase.floatingactionbutton.FloatingActionButton;
@@ -34,6 +34,7 @@ import com.wdullaer.materialdatetimepicker.date.DatePickerDialog;
 import com.wdullaer.materialdatetimepicker.time.RadialPickerLayout;
 import com.wdullaer.materialdatetimepicker.time.TimePickerDialog;
 
+import android.database.sqlite.SQLiteDatabase;
 
 import java.util.Calendar;
 
@@ -521,9 +522,9 @@ public class AddReminderActivity extends AppCompatActivity implements
             // No need to create ContentValues and no need to do any ContentProvider operations.
             return;
         }
-
-
 */
+
+
 
         ContentValues values = new ContentValues();
 
