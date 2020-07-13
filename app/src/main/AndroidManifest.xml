@@ -42,7 +42,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".tasks.DetailTasksActivity"/>
+        <activity android:name=".tasks.DetailTasksActivity"/>0
         <provider
             android:name=".data.AlarmReminderProvider"
             android:authorities="com.delaroystudios.alarmreminder"
